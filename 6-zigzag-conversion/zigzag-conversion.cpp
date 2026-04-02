@@ -3,6 +3,7 @@ public:
     string convert(string s, int numRows) {
         if (numRows <= 1) return s;
         string res;
+        //create substrings for each line and add them together
         vector<string> substr(numRows, "");
 
         int line = 0, direction = -1;
